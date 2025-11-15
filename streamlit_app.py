@@ -1,9 +1,9 @@
-import Streamlit as st 
+import streamlit as st 
 import pandas as pd
 import math
 import os
 
-col1, col2, col3 = st. colums ([1,2,1])
+col1, col2, col3 = st.columns ([1,2,1])
 with col2:
     st.title("Photo Me")
 
