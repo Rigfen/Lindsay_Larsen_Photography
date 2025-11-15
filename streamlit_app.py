@@ -13,4 +13,7 @@ uploaded_file = st.file_uploader("Upload a Photo", type=["jpg","png","jpeg"])
 
 if uploaded_file:
     st.image(uploaded_file)
-st.button
+st.button("Upload File")
+st.button("Photo Set")
+
+st.image(f"{type}")
