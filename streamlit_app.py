@@ -6,10 +6,9 @@ st.title("Photo Me")
 st.markdown("_________")
 
 st.subheader("Upload photo,\n Choose a file\n Choose a Photo")
+st.markdown("__________")
 
-# Go to upload page
-if st.button("Upload Photos"):
-    st.switch_page("photo_suave.py")
+st.image("IMG_6127.jpeg")
 
 # View only selected photos
 if st.button("Photo Set"):
