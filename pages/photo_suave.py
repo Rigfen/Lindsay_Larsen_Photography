@@ -39,3 +39,13 @@ if st.button("Save Photo Set"):
     data["photo_set"] = selected
     photo_data.save_data(data)
     st.success("Photo Set updated!")
+st.markdown("---")
+st.subheader("Uploaded Photos")
+
+if not data["uploaded_photos"]:
+    st.info("No photos uploaded yet.")
+else:
+    for filename in data["uploaded_photos"]:
+        path = os.path.join("photos", filename)
+        if os.path.exists(path):
+            st.image(path, caption=filename, use_column_width=True)
