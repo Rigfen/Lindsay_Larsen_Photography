@@ -9,7 +9,7 @@ st.subheader("Upload photo,\n Choose a file\n Choose a Photo")
 
 # Go to upload page
 if st.button("Upload Photos"):
-    st.switch_page("photo_save.py")
+    st.switch_page("photo_suave.py")
 
 # View only selected photos
 if st.button("Photo Set"):
