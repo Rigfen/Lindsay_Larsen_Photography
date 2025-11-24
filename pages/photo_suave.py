@@ -45,7 +45,12 @@ st.subheader("Uploaded Photos")
 if not data["uploaded_photos"]:
     st.info("No photos uploaded yet.")
 else:
-    for filename in data["uploaded_photos"]:
+    cols = st.columns(3)
+
+    for index, filename in enumerate(data["uploaded_photos"]):
         path = os.path.join("photos", filename)
+
         if os.path.exists(path):
-            st.image(path, caption=filename, use_column_width=True)
+            col = cols[index % 3]
+            col.image(path, caption=filename, use_column_width=True)
+
