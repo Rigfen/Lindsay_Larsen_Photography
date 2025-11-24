@@ -8,6 +8,7 @@ st.markdown("_________")
 st.subheader("Upload photo,\n Choose a file\n Choose a Photo")
 st.markdown("__________")
 
+st.image("IMG_6127.jpeg")
 # View only selected photos
 if st.button("Photo Set"):
     st.subheader("Photo Set")
